@@ -1,0 +1,271 @@
+/* GOBAL */
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+/* body{
+    padding-left: 40px;
+    padding-right: 40px;
+} */
+/* END GOBAL */
+/* HEADER */
+    /* 1 */
+    .horse{
+        background-color:#f3f3f3;
+        height: 40px;
+        padding: 7px;
+        margin: 0 40px;
+    }
+    @media only screen and (max-width: 890px){
+        .horse{ display: none;}
+    }
+    .horse .horse__left .horse__detail{
+        list-style-type: none;
+        
+        float: left;
+    }
+    .horse .horse__left .horse__item{
+        display: inline;
+        padding:7px 7px;
+    }
+
+    .horse .horse__left .horse__item img{
+        width: 30px;
+        height: 30px;
+        padding-right:7px ;
+        margin-left: 80px;
+    }
+    .horse .horse__left .horse__item a{
+        text-decoration: none;
+        color: #102b4e;
+        
+        padding-right: 7px;
+    }
+    .horse .horse__left .horse__item .horse__border{
+        border-right: solid 1px rgba(0, 0, 0, 0.178);
+    }
+    .horse__right{
+        float: right;
+        margin-right: 80px;
+    }
+    .horse .horse__right a{
+        color: #102b4e;
+    }
+    .horse .horse__left .horse__item:hover a{
+        color: #0276b3;
+    }
+    .horse .horse__right:hover i{
+        color: #0276b3;
+    }
+    /* 1 */
+    /* NAV */
+    
+    nav{
+        margin: 0 40px;
+        
+       letter-spacing: .1px;
+       font-weight: 500;
+       height: 80px;
+       background: none;
+   }
+    .navbar{
+        padding: .5rem 4rem;
+        justify-content: left;
+    }
+    .navbar-toggler{
+        margin-left: auto;
+    }
+    .nav__left{
+        margin-right: 30px;
+    }
+   .nav__left .nav-item{
+       
+       font-size: 13.5px;
+   }
+   .nav__right .nav-item{
+       font-size: 13px;
+        
+    }
+    @media only screen and (max-width: 1300px){
+        .nav__right span{ display: none;}
+    }
+   .navbar-light .navbar-nav .nav-link{
+       color: #0276b3;
+   }
+   .nav__logo{
+    width: 90px;
+    margin-right: 30px;
+    display: inline-flex;
+   }
+    /* DROP DOWN*/
+
+   .dropdown-menu{
+       width: 100%;
+       padding-left: 60px ;
+       padding-right: 60px;
+   }
+   .nav__item{
+       display: inline-block;
+       width: 210px;
+       height: 208px
+       margin: 10px
+       padding: 0 25px;
+   }
+   .nav__lable{
+       height: 20px;
+        font-weight: 200; 
+        font-size: 13.5px;
+   }
+   .nav__item .nav__lable img{
+       height: 20px;
+       width: 20px; 
+       float: left;
+   }
+   .nav__item img{
+       width:100%
+   }
+   .nav__item a{
+       color: #0276b3;
+        
+   }
+   /* ĐỜI XE */
+   .car__models{
+       color: #102b4e;
+       text-decoration: none;
+       font-size: 14px;
+   }
+   
+   .car__models i{
+       display: none;
+   }
+   .car__models:hover i{
+       display: inline-block;
+   }
+   /* (Đoạn này chỉnh số 1 nhỏ trên giá bán) */
+   .nav__explant{
+       vertical-align: super;
+       border: none;
+       background: none;
+       font-size: 12px;
+       cursor: pointer;
+   }
+   .nav__item span{
+       font-weight: 200;
+       font-size: 13px;
+   }
+   /* CÁC NÚT DƯỚI MENU */
+    .nav__link{
+        padding: 20px 40px;
+        
+    }
+    .link__container ul{
+        list-style: none;
+        padding: 10px;
+    }
+    .link__container li{
+        display: inline;
+        background: #0276b3;
+        border-radius: 30px;
+        padding: 10px 25px;
+        margin: 0 10px;
+    }
+    .link__container a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+   /*END DROP DOWN*/
+    /* END nav */
+/* END HEADER */
+/* FORD CAROUSEL */
+.ford__carousel{
+    margin: 0 40px;
+}
+.carousel-control-prev {
+    justify-content: start;
+}
+.carousel-control-next {
+   justify-content: flex-end;
+   
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 30px;
+    height: 50px;
+    background-color: black;
+}
+.carousel-indicators li{
+    width: 13px;
+    height: 13px;
+    border-radius: 30px;
+    border: white 2px solid;
+    background: none;
+}
+/* END FORD CAROUSEL */
+/* FORD VEHICLES */
+    .fordVehicles{
+        margin: 0 40px;
+        text-align: center;
+    }
+    .fordVehicles__title{
+        margin-top: 30px;
+        font-weight: 400;
+    }
+    .fordVehicles__btn{
+        width: 300px;
+        height: 50px;
+        background-color: #0276b3;
+        color: white;
+        border: none;
+        font-weight: 400;
+    }
+    .fordVehicles__btn:hover{
+        background-color: white;
+        color: #102b4e;
+        border: 1px solid #102b4e;
+    }
+    .fordVehicles__item1{
+        background: url(../ford_img/stfveryone/cq5dam.web.1440.14402.webp) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        margin-top: 30px;
+    }
+    .fordVehicles__item2{
+        background: url('../ford_img/stfveryone/hinh2.png') no-repeat center center;
+        background-size: cover;
+        height: 230px;
+        position: relative;
+    }
+    .fordVehicles__item2 a{
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    .fordVehicles__item2 a h1{
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+/* END FORD VEHICLES */
+/* FORD SERVICE  */
+.fordServices{
+    
+    margin: 0 40px;
+    
+    
+}
+
+.fordServices img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* END FORD SERVICE  */
