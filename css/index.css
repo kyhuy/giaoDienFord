@@ -206,6 +206,33 @@
     border: white 2px solid;
     background: none;
 }
+.carousel-item{
+    position: relative;
+}
+
+.btn__carousel{
+        display: inline;
+        background: #0276b3;
+        padding: 15px 40px;
+        margin: 0 10px;
+        position: absolute;
+        top: 35%;
+         left: 13%;
+        transform: translate(-50%, -50%);
+        transition: all .25s;
+}
+.btn__carousel a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+}
+.btn__carousel:hover{
+    
+    background: #102b4e;
+    
+}
 /* END FORD CAROUSEL */
 /* FORD VEHICLES */
     .fordVehicles{
@@ -256,16 +283,69 @@
 /* END FORD VEHICLES */
 /* FORD SERVICE  */
 .fordServices{
-    
     margin: 0 40px;
-    
+}
+.fordServices__content{
+   display: grid;
+   grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
     
 }
+.services__item img{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+.fordServices__content .g1{
+    grid-column: 1 / 4;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    
+}
+.fordServices__content .g1 h1{
+    font-weight: 100;
+}
+.fordServices__content .g3{
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+.services__item1{
+    position: relative;
+    overflow: hidden;
+}
 
-.fordServices img{
+.blue__title{
+    position: absolute;
+    background: #0275b3b2;
     width: 100%;
-    height: 100%;
-    display: block;
+    bottom: 0px;
+    justify-content: center;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 400;
+    
 }
-
+.blue__title p{
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.blue__title span{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 40px;
+    float: right;
+    text-align: center;
+}
+.services__item1:hover img{
+    transform: scale(1.1);
+}
+.blue__title:hover span{
+    border: 2px solid #102b4e;
+    color: #102b4e;
+    background: #f3f3f3;
+}
 /* END FORD SERVICE  */
